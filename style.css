@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+body{
+    background-color: rgb(245, 241, 241);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient( rgb(210, 219, 160) , rgb(178, 238, 12) );
+    
+}
+h1{
+    color: rgb(11, 129, 226);
+}
+
+h2{
+    font-size: 20px;
+    margin-top: 5px;
+    color: rgb(230, 227, 227);
+}    
+.logocbf{
+    display: flex;
+    font-size: 20px;
+    margin-left: 380px;
+    margin-top:80px;
+}
+
+.linha{
+    border-bottom: 2px solid rgba(245, 245, 245, 0.801);
+    margin-top: 15px;
+
+}
+
+.fundo{
+    display: flex;
+    background-image: url(../assets/imgfundo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+figure{
+    margin: 0;
+    padding: 5px;
+    
+}
+
+figure img{
+    width: 650px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 350px;
+    border-radius: 80px;
+    
+    
+    
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(30, 45, 252);
+    margin-left: 400px;
+    border-radius: 20px;
+    animation-name: figcaption;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes figcaption{
+    0% {color: rgb(236, 240, 2);}
+    50% {color: rgb(10, 211, 37);}
+    70% {color: rgb(199, 243, 5);}
+    100% {color: rgb(12, 241, 4);}
+
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient( rgb(210, 219, 160) , rgb(204, 243, 96) );
+
+}
+.list_title{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-top: 20px;
+
+}
+.list_desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p{
+    line-height: 35px;
+    text-align: center;    
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(10, 58, 88);
+    
+}
+
+.time-line{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+ul ,li{
+    display: block;
+    text-align: center;    
+    line-height: 40px;
+    color: rgb(15, 58, 95);
+}
+
+
+.linha1{
+    border: 1px dashed #333;
+}
+
+aside{
+    background: linear-gradient( rgb(238, 252, 160) , rgb(207, 241, 113) );
+}
+
+.gallery_title{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: aliceblue;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery_photos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.img2{
+    display: flex;
+    justify-content: center;
+    width: 410px;
+    height: auto;
+    margin: 50px auto;
+    border: 4px solid white;
+}
+.img2 img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px 2px rgb(233, 232, 232);
+    cursor: pointer;
+    transition: all 1s ease;
+
+        
+}
+.img3{
+    display: flex;
+    justify-content: center;
+    width: 410px;
+    height: auto;
+    margin: 50px auto;
+    border: 4px solid white;
+
+}
+.img3 img{
+    width: 100%;
+    object-fit:cover;
+    box-shadow: 0px 0px 15px 2px rgb(219, 218, 218);
+    cursor: pointer;
+    transition: all 1s ease;
+
+
+
+
+}
+
+.imgcopa{
+    display: flex;
+    justify-content: center;
+    width: 720px;
+    margin: 50px auto;
+    border: 4px solid white;
+}
+
+.imgcopa img{
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    box-shadow: 0px 0px 15px 2px rgb(219, 218, 218);
+    transition: all 1s ease ;
+    cursor: pointer;
+}
+
+.img2:hover,
+.img3:hover{
+    zoom: 130%
+}
+.imgcopa:hover{
+    zoom: 110%
+}
+
+.imgcopa img:hover,
+.img2 img:hover,
+.img3 img:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px 2px #333;
+    border-radius: 5%;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    height: 35px;
+    background-color: rgb(32, 32, 32);
+    color: bisque;
+    font-size: 15px;
+}
